@@ -1,20 +1,35 @@
-Flake8Lint
-=========
+Python Flake8 Lint
+==================
 
-Flake8Lint is a Sublime Text 2 plugin for check Python files against some of the style conventions in **[PEP8](http://www.python.org/dev/peps/pep-0008/)**, **[PyFlakes](https://launchpad.net/pyflakes)** and **[mccabe](http://nedbatchelder.com/blog/200803/python_code_complexity_microtool.html)**.
+Python Flake8 Lint is a Sublime Text 2 plugin for check Python files against some of the style conventions in **[PEP8](http://www.python.org/dev/peps/pep-0008/)**, **[PyFlakes](https://launchpad.net/pyflakes)** and **[mccabe](http://nedbatchelder.com/blog/200803/python_code_complexity_microtool.html)**.
 
 Based on **[bitbucket.org/tarek/flake8](https://bitbucket.org/tarek/flake8)**.
+
+
+Lint tools
+----------
+
+**[Flake8](http://pypi.python.org/pypi/flake8)** (used in "Python Flake8 Lint") is a wrapper around these tools:
+
+* **[pep8](http://pypi.python.org/pypi/pep8)** is a tool to check your Python code against some of the style conventions in [PEP8](http://www.python.org/dev/peps/pep-0008/).
+
+* **[PyFlakes](https://launchpad.net/pyflakes)** checks only for logical errors in programs; it does not perform any check on style.
+
+* **[mccabe](http://nedbatchelder.com/blog/200803/python_code_complexity_microtool.html)** is a code complexity checker. It is quite useful to detect over-complex code. According to McCabe, anything that goes beyond 10 is too complex. See [Cyclomatic_complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).
 
 
 Install
 -------
 
-Download the latest source from [GitHub](https://github.com/dreadatour/Flake8Lint/zipball/master) and copy *Flake8Lint* folder to your ST2 "Packages" directory.
+**With the Package Control plug-in:** The easiest way to install Python Flake8 Lint is through Package Control, which can be found at this site: http://wbond.net/sublime_packages/package_control
+
+Once you install Package Control, restart ST2 and bring up the Command Palette (Command+Shift+P on OS X, Control+Shift+P on Linux/Windows). Select "Package Control: Install Package", wait while Package Control fetches the latest package list, then select Python Flake8 Lint when the list appears. The advantage of using this method is that Package Control will automatically keep Python Flake8 Lint up to date with the latest version.
+
+**Manual installation:** Download the latest source from [GitHub](https://github.com/dreadatour/Flake8Lint/zipball/master), unzip it and rename the folder to "Python Flake8 Lint". Put this folder into your ST2 "Packages" directory.
 
 Or clone the repository to your ST2 "Packages" directory:
 
-    git clone git://github.com/dreadatour/Flake8Lint.git
-
+    git clone git://github.com/dreadatour/Flake8Lint.git "Python Flake8 Lint"
 
 The "Packages" directory is located at:
 
@@ -34,7 +49,7 @@ The "Packages" directory is located at:
 Config
 ------
 
-Default Flake8Lint config: "Preferences" -> "Package Settings" -> "Flake8Lint" -> "Settings - Default"
+Default Python Flake8 Lint config: "Preferences" -> "Package Settings" -> "Python Flake8 Lint" -> "Settings - Default"
 
 	{
 		// run flake8 lint on file saving
@@ -65,10 +80,13 @@ Default Flake8Lint config: "Preferences" -> "Package Settings" -> "Flake8Lint" -
 		// select errors and warnings (e.g. ["E", "W6"])
 		"select": [],
 		//skip errors and warnings (e.g. ["E303", E4", "W"])
-		"ignore": []
+		"ignore": [],
+
+		// files to ignore, for example: ["*.mako", "test*.py"]
+		"ignore_files": []
 	}
 
-To change default settings, go to "Preferences" -> "Package Settings" -> "Flake8Lint" -> "Settings - User" and paste default config to opened file.
+To change default settings, go to "Preferences" -> "Package Settings" -> "Python Flake8 Lint" -> "Settings - User" and paste default config to the opened file and make your changes.
 
 
 Note
