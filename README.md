@@ -25,11 +25,11 @@ Install
 
 Once you install Package Control, restart ST2 and bring up the Command Palette (Command+Shift+P on OS X, Control+Shift+P on Linux/Windows). Select "Package Control: Install Package", wait while Package Control fetches the latest package list, then select Python Flake8 Lint when the list appears. The advantage of using this method is that Package Control will automatically keep Python Flake8 Lint up to date with the latest version.
 
-**Manual installation:** Download the latest source from [GitHub](https://github.com/dreadatour/Flake8Lint/zipball/master), unzip it and rename the folder to "Python Flake8 Lint". Put this folder into your ST2 "Packages" directory.
+**Manual installation:** Download the latest source from [GitHub](https://github.com/hashier/Flake8Lint/zipball/master), unzip it and rename the folder to "Python Flake8 Lint". Put this folder into your ST2 "Packages" directory.
 
 Or clone the repository to your ST2 "Packages" directory:
 
-    git clone git://github.com/dreadatour/Flake8Lint.git "Python Flake8 Lint"
+    git clone git://github.com/hashier/Flake8Lint.git "Python Flake8 Lint"
 
 The "Packages" directory is located at:
 
